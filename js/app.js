@@ -135,7 +135,9 @@ const handleShowDetails = async(id) => {
 
     // Get The Phone GPS
     const gps = document.getElementById('gps');
-
+    
+    // Get The GPS Value from the API
+    const apiGPS = data.data?.others?.GPS;
 
 
     // Set The Phone Image
@@ -166,7 +168,11 @@ const handleShowDetails = async(id) => {
     brand.innerText = data.data.brand;
 
     // Set The Phone GPS
-    gps.innerText = data.data?.others?.GPS;
+    if (apiGPS === undefined) {
+        gps.innerText = "No, GPS Not Supported";
+    } else {
+        gps.innerText = data.data?.others?.GPS;
+    }
 
     showPhoneDetails(data)
 
