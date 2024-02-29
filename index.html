@@ -64,6 +64,51 @@
 
 
 
+            <!-- ================= Modal ====================== -->
+
+            <!-- You can open the modal using ID.showModal() method -->
+
+            <dialog id="show_modal_detail" class="modal">
+                <div class="modal-box w-11/12 max-w-5xl">
+
+                    <figure class="flex justify-center bg-[#0D6EFD0D] py-14 px-5">
+                        <img id="phone-image" src="" alt="phone image">
+                    </figure>
+
+                    <div class="mt-5 space-y-3 w-full sm:w-[600px]">
+                        <h3 id="phone-title" class="font-bold text-3xl text-[#403F3F]"></h3>
+
+                        <p class="text-base text-[#706F6F]">It is a long established fact that a reader will be distracted by the readable
+                            content of a page when looking at its layout.</p>
+
+                        <h3 class="text-xl text-[#403F3F] font-bold">Storage : <span class="text-lg text-[#706F6F] font-semibold" id="storage"></span></h3>
+
+                        <p class="text-xl text-[#403F3F] font-bold">Display Size : <span class="text-lg text-[#706F6F] font-semibold" id="display-size"></span></p>
+
+                        <p class="text-xl text-[#403F3F] font-bold">Chipset : <span class="text-lg text-[#706F6F] font-semibold" id="chipset"></span></p>
+
+                        <p class="text-xl text-[#403F3F] font-bold">Memory : <span class="text-lg text-[#706F6F] font-semibold" id="memory"></span></p>
+
+                        <p class="text-xl text-[#403F3F] font-bold">Slug : <span class="text-lg text-[#706F6F] font-semibold" id="slug"></span></p>
+
+                        <p class="text-xl text-[#403F3F] font-bold">Release Date : <span class="text-lg text-[#706F6F] font-semibold" id="release-date"></span></p>
+
+                        <p class="text-xl text-[#403F3F] font-bold">Brand : <span class="text-lg text-[#706F6F] font-semibold" id="brand"></span></p>
+
+                        <p class="text-xl text-[#403F3F] font-bold">GPS : <span class="text-lg text-[#706F6F] font-semibold" id="gps">No, GLONASS, GALILEO, BDS, QZSS</span></p>
+                    </div>
+
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button, it will close the modal -->
+                            <button class="py-5 px-12 bg-[#DC3545] rounded-lg text-xl text-white font-bold">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+
+
+
         </section>
     </main>
 
